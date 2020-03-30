@@ -3,6 +3,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 
 public class TheatreTests {
@@ -16,8 +19,7 @@ public class TheatreTests {
     @Test
     public void testPurchaseSeat(){
         test.purchaseSeat(0);
-        assertEquals
-                (test.getSize(), 59);
+        assertEquals(test.getSize(), 59);
         assertTrue(test.isPurchased(10));
         test.purchaseSeat(10);
         assertEquals(test.getSize(), 59);
@@ -45,8 +47,7 @@ public class TheatreTests {
     }
     @Test public void testIsAisle(){
         assertTrue(test.isAisle(3));
-        assertEquals(test.getSize(),
-                59);
+        assertEquals(test.getSize(), 59);
         assertTrue(test.isPurchased(10));
         test.purchaseSeat(10);
         assertEquals(test.getSize(), 59);
